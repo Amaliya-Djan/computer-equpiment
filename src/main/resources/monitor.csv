@@ -1,0 +1,6 @@
+id,color,price,quantity,refreshRate,displaySize,speaker,company
+1,black,45,3,19,120,true,Acer
+2,white,43,2,20,140,true,Lenovo
+3,black,40,4,21,120,false,HP
+4,grey,39,3,22,150,true,Aorus
+5,brown,48,1,23,160,false,Apple

@@ -1,0 +1,6 @@
+id,color,price,quantity,numberButtons,forGame,wireless,length
+1,black,45,3,4,true,false,8.5
+2,white,43,2,3,false,true,7.5
+3,black,40,4,3,false,true,6.5
+4,grey,39,3,2,true,true,9.5
+5,brown,48,1,4,true,false,8.5

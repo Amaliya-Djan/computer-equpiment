@@ -1,0 +1,6 @@
+id,color,price,quantity,lamps,width,height
+1,black,20,3,true,18.5,13
+2,white,21,2,true,20,12.5
+3,black,23,4,false,22,11
+4,grey,19,3,false,24.5,10
+5,brown,15,1,true,21,14
