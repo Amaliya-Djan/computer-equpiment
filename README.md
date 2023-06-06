@@ -1,4 +1,4 @@
-# Computer-Equipment-Warehouse
+# Computer Equipment WareHouse
 
 
 
@@ -15,78 +15,103 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/amaliyadjan1204/computer-equipment-warehouse.git
+git remote add origin https://gitlab.com/MuniraGafarova/households-appliances-warehouse.git
 git branch -M main
 git push -uf origin main
 ```
 
-## Integrate with your tools
+## Task Requirements
+### The application developed must meet the following requirements:
 
-- [ ] [Set up project integrations](https://gitlab.com/amaliyadjan1204/computer-equipment-warehouse/-/settings/integrations)
+- After launching, display the following:
+- The application name, which should correspond to your subject area, version, and creation date
+- Information about the developer (e.g., name and email address)
+- A list of the available commands (menu)
+- Wait for a command to be input and the additional parameters for executing it.
+- After entering the command and the required parameters, perform the calculations, print the result, and wait for the next command to be entered.
+- One of the commands must exit the application.
+- Read the inventory data from the pre-formatted text file.
+- Allow users to search for products in the inventory based on various parameters.
+- When a user searches for a product, display a list of matching products with their details (e.g., ID, name, category, price, quantity, etc.).
+- If no matching products exist, display a message indicating no products were found.
+- Allow users to see a list of all the products in the inventory, sorted by the selected order.
+- Errors should be handled gracefully, displaying the appropriate error messages to the user.
 
-## Collaborate with your team
+## Functionality
+### The application must be able to:
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+- Perform the tasks specified in the project requirements
+- Take input from the user and provide output as expected
+- Run efficiently, with minimal resource usage and no unnecessary delays or hang-ups
 
-## Test and Deploy
+##  Code Quality
+- The source code should be well-organized, readable, and maintainable. 
+- It should follow best practices and adhere to the principles of object-oriented programming.
+- 
+- Use a Git repository for the source code. 
+- This will allow the mentor to review the commit history and see the progress of the project over time. 
+- The mentor will consider factors such as the frequency and quality of commits.
 
-Use the built-in continuous integration in GitLab.
+##  Testing
+- The application should be tested thoroughly to ensure that it performs as expected and that all edge cases have been accounted for.
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
 
-***
+| Criteria / Points                                                                                                                          | 0 point                                                                           | 8 points	                                                                                             | 12 points                                                                                                          |
+|--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| Architectural layers	                                                                                                                      | The application does not contain dedicated architectural layers.                  | Architectural layers are weakly expressed, and some layers are missing.                               | All architectural layers are present.                                                                              |  
+| Application design                                                                                                                         | The application is not designed according to the interface-implementation scheme. | Some public functions are separated into specific interfaces.                                         | In each layer, public functions (actions) are declared via interfaces.                                             |
+| Interaction between layers                                                                                                                 | Low coupling for interaction between layers is not used.                          | Low coupling is sometimes used to interact between layers.                                            | Low coupling is used to interact between layers.                                                                   |
+| [Java code convention](https://www.oracle.com/technetwork/java/codeconventions-150003.pdf): proper naming of identifiers, access modifiers | The code does not comply with the rules; there are many errors.                   | The code does not fully comply with the rules.                                                        | The code fully complies with the rules.                                                                            |
+| Copy-paste code                                                                                                                            | Copy-paste is present.                                                            | Copy-paste is present in 1 case or negligible.                                                        | Copy-paste is absent.                                                                                              |
+| Quantity and quality of tests                                                                                                              | There are no tests in the application.                                            | Tests are available but in a non-working or unfinished state.                                         | The application contains the required number of tests (mentioned in the Data Access Layer section of this course). |
+| Error handling in the application                                                                                                          | Exceptions in code are handled incorrectly.                                       | Correct exception handling is partially implemented.                                                  | Exceptions in code are handled correctly.                                                                          |
+| Git history                                                                                                                                | There is no history in the Git repository.                                        | The Git repository has a history, but the dates do not correlate with the submitted development plan. | The Git repository has a history, but the dates do not correlate with the submitted development plan.              |
 
-# Editing this README
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+## Available commands after launching:
 
-## Name
-Choose a self-explaining name for your project.
+| command description| command shortcut|
+|--------------------|:----------------|
+|  TV                | 1               |
+|  Oven              | 2               |
+|  Refrigerator      | 3               |
+|  Quit              | q               |
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+## After entering the shortcut commands
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+|          Monitor          | command shortcut|
+|---------------------------|:----------------|
+|  Find by refresh rate     | 5               |
+|  Find by display size     | 6               |
+|  Show all                 | 1               |
+|  Find by id               | 2               |
+|  Find by color            | 3               |
+|  Filter by price          | 4               |
+|  Back                     | 0               |
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+|          Keyboard          | command shortcut|
+|---------------------------|:----------------|
+|  Find by width & height   | 5               |
+|  Show all                 | 1               |
+|  Find by id               | 2               |
+|  Find by color            | 3               |
+|  Filter by price          | 4               |
+|  Back                     | 0               |
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+|        Mouse               | command shortcut|
+|----------------------------|:----------------|
+|  Find by wireless          | 5               |
+|  Show all                  | 1               |
+|  Find by id                | 2               |
+|  Find by color             | 3               |
+|  Filter by price           | 4               |
+|  Back                      | 0               |
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
 
 ## License
 For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
